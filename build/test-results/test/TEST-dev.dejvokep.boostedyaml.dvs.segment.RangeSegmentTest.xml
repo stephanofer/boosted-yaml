@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.dejvokep.boostedyaml.dvs.segment.RangeSegmentTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:52.901Z" hostname="STEPHANOFER" time="0.011">
+  <properties/>
+  <testcase name="length()" classname="dev.dejvokep.boostedyaml.dvs.segment.RangeSegmentTest" time="0.002"/>
+  <testcase name="getElement()" classname="dev.dejvokep.boostedyaml.dvs.segment.RangeSegmentTest" time="0.002"/>
+  <testcase name="parse()" classname="dev.dejvokep.boostedyaml.dvs.segment.RangeSegmentTest" time="0.002"/>
+  <testcase name="getElementLength()" classname="dev.dejvokep.boostedyaml.dvs.segment.RangeSegmentTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

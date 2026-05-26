@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.dejvokep.boostedyaml.updater.operators.MapperTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.439Z" hostname="STEPHANOFER" time="0.011">
+  <properties/>
+  <testcase name="apply()" classname="dev.dejvokep.boostedyaml.updater.operators.MapperTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

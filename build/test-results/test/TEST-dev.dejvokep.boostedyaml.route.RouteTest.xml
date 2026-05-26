@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.dejvokep.boostedyaml.route.RouteTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.085Z" hostname="STEPHANOFER" time="0.027">
+  <properties/>
+  <testcase name="fromString()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.001"/>
+  <testcase name="length()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.001"/>
+  <testcase name="parent()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.005"/>
+  <testcase name="add()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.002"/>
+  <testcase name="get()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.005"/>
+  <testcase name="from()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.004"/>
+  <testcase name="addTo()" classname="dev.dejvokep.boostedyaml.route.RouteTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.dejvokep.boostedyaml.updater.operators.MergerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.451Z" hostname="STEPHANOFER" time="0.013">
+  <properties/>
+  <testcase name="merge()" classname="dev.dejvokep.boostedyaml.updater.operators.MergerTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

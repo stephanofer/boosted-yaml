@@ -21,9 +21,12 @@ import dev.dejvokep.boostedyaml.settings.loader.LoaderSettings;
 import dev.dejvokep.boostedyaml.settings.updater.UpdaterSettings;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -101,6 +104,19 @@ class YamlDocumentTest {
         File file = new File("file.yml");
         // Assert
         assertEquals(file, YamlDocument.create(file, GeneralSettings.DEFAULT, LoaderSettings.builder().setCreateFileIfAbsent(false).build(), DumperSettings.DEFAULT, UpdaterSettings.DEFAULT).getFile());
+    }
+
+    @Test
+    void fileBackedReloadReleasesFileHandle(@TempDir Path tempDir) throws IOException {
+        // File
+        Path file = tempDir.resolve("config.yml");
+        Files.writeString(file, "hello: world\n", StandardCharsets.UTF_8);
+        // Create and reload
+        YamlDocument document = YamlDocument.create(file.toFile());
+        document.reload();
+        // Assert the file can be deleted immediately after reload
+        Files.delete(file);
+        assertFalse(Files.exists(file));
     }
 
     @Test
