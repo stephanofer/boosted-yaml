@@ -110,7 +110,7 @@ class YamlDocumentTest {
     void fileBackedReloadReleasesFileHandle(@TempDir Path tempDir) throws IOException {
         // File
         Path file = tempDir.resolve("config.yml");
-        Files.writeString(file, "hello: world\n", StandardCharsets.UTF_8);
+        Files.write(file, "hello: world\n".getBytes(StandardCharsets.UTF_8));
         // Create and reload
         YamlDocument document = YamlDocument.create(file.toFile());
         document.reload();

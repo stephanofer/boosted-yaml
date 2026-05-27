@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.dejvokep.boostedyaml.settings.updater.MergeRuleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.263Z" hostname="STEPHANOFER" time="0.001">
-  <properties/>
-  <testcase name="getFor()" classname="dev.dejvokep.boostedyaml.settings.updater.MergeRuleTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

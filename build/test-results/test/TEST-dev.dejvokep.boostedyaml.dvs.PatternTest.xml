@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.dejvokep.boostedyaml.dvs.PatternTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:52.867Z" hostname="STEPHANOFER" time="0.012">
-  <properties/>
-  <testcase name="getPart()" classname="dev.dejvokep.boostedyaml.dvs.PatternTest" time="0.003"/>
-  <testcase name="getVersion()" classname="dev.dejvokep.boostedyaml.dvs.PatternTest" time="0.002"/>
-  <testcase name="getFirstVersion()" classname="dev.dejvokep.boostedyaml.dvs.PatternTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

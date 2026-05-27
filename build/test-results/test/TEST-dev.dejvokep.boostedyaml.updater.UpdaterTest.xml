@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.dejvokep.boostedyaml.updater.UpdaterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.363Z" hostname="STEPHANOFER" time="0.044">
-  <properties/>
-  <testcase name="update()" classname="dev.dejvokep.boostedyaml.updater.UpdaterTest" time="0.031"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

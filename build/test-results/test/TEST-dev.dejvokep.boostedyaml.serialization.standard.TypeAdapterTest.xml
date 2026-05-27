@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.dejvokep.boostedyaml.serialization.standard.TypeAdapterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-26T06:03:53.180Z" hostname="STEPHANOFER" time="0.031">
-  <properties/>
-  <testcase name="toStringKeyedMap()" classname="dev.dejvokep.boostedyaml.serialization.standard.TypeAdapterTest" time="0.022"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
