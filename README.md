@@ -29,14 +29,15 @@ All of that with quick and kind support. Convinced? Let's get you onboard.
 # 🔧 Quick setup
 Setup takes only about 5 minutes. Example software built using this guide is available at https://github.com/dejvokep/boosted-yaml-example.
 ## 1.1. Add using Maven:
-BoostedYAML is hosted by Maven Central Repository. That means, you only need to add a dependency:
+This fork uses the following coordinates:
 ```xml
 <dependency>
-  <groupId>dev.dejvokep</groupId>
+  <groupId>com.stephanofer.boostedyaml</groupId>
   <artifactId>boosted-yaml</artifactId>
-  <version>1.3.6</version>
+  <version>1.3.7</version>
 </dependency>
 ```
+Because this is a fork, make sure the artifact is available in your local Maven repository before consuming it.
 Add the following shading section to prevent class loader conflicts:
 ```xml
 <build>
@@ -67,14 +68,15 @@ Add the following shading section to prevent class loader conflicts:
 </build>
 ```
 ## 1.2. Add using Gradle:
-BoostedYAML is hosted by Maven Central Repository. That means, you only need to add a dependency (and the maven central repo):
+Because this is a fork, you need to include `mavenLocal()` so Gradle can resolve the dependency from your local Maven repository:
 ```gradle
 repositories {
+   mavenLocal()
    mavenCentral()
 }
 
 dependencies {
-   implementation "dev.dejvokep:boosted-yaml:1.3.6"
+   implementation("com.stephanofer.boostedyaml:boosted-yaml:1.3.7")
 }
 ```
 
