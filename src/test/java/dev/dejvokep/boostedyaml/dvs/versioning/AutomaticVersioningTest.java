@@ -22,6 +22,7 @@ import dev.dejvokep.boostedyaml.settings.general.GeneralSettings;
 import dev.dejvokep.boostedyaml.settings.loader.LoaderSettings;
 import dev.dejvokep.boostedyaml.settings.updater.UpdaterSettings;
 import dev.dejvokep.boostedyaml.dvs.Pattern;
+import dev.dejvokep.boostedyaml.route.Route;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -56,6 +57,28 @@ class AutomaticVersioningTest {
         VERSIONING.updateVersionID(document, createFile().getDefaults());
         // Assert
         assertEquals("1.4", document.getString("x"));
+    }
+
+    @Test
+    void updateVersionIDPreservesIntegerType() throws IOException {
+        YamlDocument document = YamlDocument.create(new ByteArrayInputStream("config-version: 1".getBytes(StandardCharsets.UTF_8)));
+        YamlDocument defaults = YamlDocument.create(new ByteArrayInputStream("config-version: 2".getBytes(StandardCharsets.UTF_8)));
+
+        new BasicVersioning("config-version").updateVersionID(document, defaults);
+
+        assertTrue(document.isInt("config-version"));
+        assertEquals(2, document.getInt("config-version"));
+    }
+
+    @Test
+    void updateVersionIDPreservesIntegerTypeWithRoute() throws IOException {
+        YamlDocument document = YamlDocument.create(new ByteArrayInputStream("config-version: 1".getBytes(StandardCharsets.UTF_8)));
+        YamlDocument defaults = YamlDocument.create(new ByteArrayInputStream("config-version: 2".getBytes(StandardCharsets.UTF_8)));
+
+        new AutomaticVersioning(BasicVersioning.PATTERN, Route.from("config-version")).updateVersionID(document, defaults);
+
+        assertTrue(document.isInt("config-version"));
+        assertEquals(2, document.getInt("config-version"));
     }
 
     private YamlDocument createFile() throws IOException {

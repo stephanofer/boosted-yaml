@@ -84,9 +84,9 @@ public class AutomaticVersioning implements Versioning {
     public void updateVersionID(@NotNull Section updated, @NotNull Section def) {
         //If routes are used
         if (route != null)
-            updated.set(route, def.getString(route));
+            updated.set(route, def.get(route));
         else
-            updated.set(strRoute, def.getString(strRoute));
+            updated.set(strRoute, def.get(strRoute));
     }
 
     @Override
